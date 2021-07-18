@@ -13,7 +13,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100%;
+	z-index: -1;
 }
 .cardsContainer__card {
 	box-shadow: 1px 1px 14px -4px #000000;
@@ -22,7 +22,7 @@ body {
 	padding-bottom: 24px;
 	height: 400px;
 	width: 200px;
-	margin: 10px;
+	margin: 0 10px;
 	text-align: center;
 }
 .cardsContainer__card-offerName {
@@ -92,4 +92,62 @@ body {
 	margin: 0;
 	border-radius: 5px;
 	font-weight: bold;
+}
+.hidePlansInfo {
+	background: #fff;
+	z-index: 50;
+	width: 100%;
+	height: 100%;
+}
+.plansInfo {
+	z-index: 30;
+	position: absolute;
+	height: 440px;
+	width: 233px;
+	background: rgb(249,249,249,1);
+	border-radius: 5px;
+	top: 8px;
+	left: 431px;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.plansInfo__closeButton{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+.plansInfo__closeButton-button {
+	background: var(--orange);
+	width: 48px;
+	height: 48px;
+	color: #fff;
+	padding: 12px;
+	box-sizing: border-box;
+	font-size: 1.5em;
+	text-align: center;
+	cursor: pointer;
+}
+#plansInfo2 {
+	left: 50.70%;
+}
+.plansInfo.toggle {
+	top: 100%;
+}
+#plansInfo2.toggle {
+	top: 100%;
+}
+.plansInfo__question {
+	font-family: Gotham book;
+	margin: 0;
+	width: 100%;
+	font-size: 16px;
+}
+.plansInfo__aditionalInfo {
+	font-size: 10px;
+	height: 18px;
+	position: absolute;
+	bottom: 0;
+}
+.plansInfo__aditionalInfo-TyC {
+	bottom: 26px;
 }
